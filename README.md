@@ -58,8 +58,3 @@ cd ../frontend
 npm test
 ~~~
 
-## More information
-
-- [Overview](docs/overview.md): how the assistant behaves, the API, configuration, evaluation results, and known issues.
-- [Architecture](docs/architecture.md): components, request flow, failure modes, and what production would need.
-- [Decision records](docs/decisions/): why the stack, retrieval and hosted models were chosen.
