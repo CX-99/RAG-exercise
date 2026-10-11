@@ -46,15 +46,4 @@ Open http://localhost:5173 and ask a question, for example "How many unused leav
 
 The first question takes a few seconds longer, because the backend embeds the policy documents then. The API docs are at http://localhost:8000/docs.
 
-## Run the tests (optional)
-
-The tests use mocked API responses, so they need no key and cost nothing.
-
-~~~powershell
-cd backend
-uv run pytest
-
-cd ../frontend
-npm test
-~~~
 
