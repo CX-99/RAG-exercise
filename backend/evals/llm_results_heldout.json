@@ -1,0 +1,326 @@
+{
+  "provider": "openrouter",
+  "llm_model": "openai/gpt-oss-20b",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "top_k": 5,
+  "min_relevance": 0.735,
+  "answerable_count": 7,
+  "unanswerable_count": 6,
+  "skipped_count": 0,
+  "answer_contains_rate": 0.14285714285714285,
+  "citation_hit_rate": 0.14285714285714285,
+  "unanswerable_refusal_rate": 1.0,
+  "answerable_false_refusal_rate": 0.8571428571428571,
+  "refusal_reasons": {
+    "model_not_found": 4,
+    "low_relevance": 5,
+    "uncited": 3
+  },
+  "routes": {
+    "grounded": 8,
+    "conversation": 5
+  },
+  "prompt_tokens": 9192,
+  "completion_tokens": 2334,
+  "questions": [
+    {
+      "id": "h01",
+      "question": "How many sick leave days do employees get each year?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.7567508220672607,
+      "route": "grounded",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1005,
+        "completion_tokens": 73,
+        "total_tokens": 1078
+      },
+      "generation_ms": 1457.2
+    },
+    {
+      "id": "h02",
+      "question": "How many unused sick days can I carry over into next year?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.7895092964172363,
+      "route": "grounded",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1012,
+        "completion_tokens": 75,
+        "total_tokens": 1087
+      },
+      "generation_ms": 3139.8
+    },
+    {
+      "id": "h03",
+      "question": "How many days of paid bereavement leave do employees get?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.7288629412651062,
+      "route": "conversation",
+      "refused": true,
+      "refusal_reason": "low_relevance",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 202,
+        "completion_tokens": 187,
+        "total_tokens": 389
+      },
+      "generation_ms": 5530.5
+    },
+    {
+      "id": "h04",
+      "question": "What is the meal allowance for a day trip without an overnight stay?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.7875583171844482,
+      "route": "grounded",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1045,
+        "completion_tokens": 155,
+        "total_tokens": 1200
+      },
+      "generation_ms": 7691.4
+    },
+    {
+      "id": "h05",
+      "question": "What is the daily cap for taxis on business trips?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.7376910448074341,
+      "route": "grounded",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1035,
+        "completion_tokens": 99,
+        "total_tokens": 1134
+      },
+      "generation_ms": 4837.6
+    },
+    {
+      "id": "h06",
+      "question": "Is there a public transport allowance for commuting to the office?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.6532005667686462,
+      "route": "conversation",
+      "refused": true,
+      "refusal_reason": "low_relevance",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 188,
+        "completion_tokens": 459,
+        "total_tokens": 647
+      },
+      "generation_ms": 4528.2
+    },
+    {
+      "id": "h07",
+      "question": "How much paid vacation do I get each year?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6733112335205078,
+      "route": "conversation",
+      "refused": true,
+      "refusal_reason": "low_relevance",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": false,
+      "expected_answer_contains": "22 working days",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 199,
+        "completion_tokens": 253,
+        "total_tokens": 452
+      },
+      "generation_ms": 4724.9
+    },
+    {
+      "id": "h08",
+      "question": "When do rolled-over holiday days expire?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.75642991065979,
+      "route": "grounded",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Rolled\u2011over (carry\u2011over) holiday days must be used by **31\u202fMarch of the following calendar year**; after that date they expire unless the Head of People has approved an exception in writing. [1]",
+      "raw_reply": "Rolled\u2011over (carry\u2011over) holiday days must be used by **31\u202fMarch of the following calendar year**; after that date they expire unless the Head of People has approved an exception in writing. [1]",
+      "cited": [
+        {
+          "doc_id": "annual-leave",
+          "section": "3. Annual Leave > 3.2 Carry-over"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "31 March",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1008,
+        "completion_tokens": 173,
+        "total_tokens": 1181
+      },
+      "generation_ms": 4781.8
+    },
+    {
+      "id": "h09",
+      "question": "Is two-factor login mandatory?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7422645092010498,
+      "route": "grounded",
+      "refused": true,
+      "refusal_reason": "uncited",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "Yes. The Information Security Policy states that \u201cmulti\u2011factor authentication is required for all company accounts that support it\u201d\u30101\u3011.",
+      "cited": [],
+      "cites_expected_section": false,
+      "expected_answer_contains": "multi-factor authentication is required",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 1021,
+        "completion_tokens": 161,
+        "total_tokens": 1182
+      },
+      "generation_ms": 2538.2
+    },
+    {
+      "id": "h10",
+      "question": "Can I save up unused remote days for a later week?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7558772563934326,
+      "route": "grounded",
+      "refused": true,
+      "refusal_reason": "uncited",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "No \u2013 unused remote days cannot be carried over to a later week. The policy states that \u201cUnused remote days do not accumulate and cannot be carried into another week\u201d\u30101\u3011.",
+      "cited": [],
+      "cites_expected_section": false,
+      "expected_answer_contains": "do not accumulate",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 1061,
+        "completion_tokens": 214,
+        "total_tokens": 1275
+      },
+      "generation_ms": 10502.5
+    },
+    {
+      "id": "h11",
+      "question": "What's the nightly hotel limit?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7559270858764648,
+      "route": "grounded",
+      "refused": true,
+      "refusal_reason": "uncited",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "The nightly hotel limit is **SGD\u202f220 per room per night before taxes**\u30101\u3011.",
+      "cited": [],
+      "cites_expected_section": false,
+      "expected_answer_contains": "SGD 220",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 1025,
+        "completion_tokens": 110,
+        "total_tokens": 1135
+      },
+      "generation_ms": 16369.0
+    },
+    {
+      "id": "h12",
+      "question": "Can I work from another country for a few weeks?",
+      "answerable": true,
+      "rank": 2,
+      "best_dense": 0.6938592791557312,
+      "route": "conversation",
+      "refused": true,
+      "refusal_reason": "low_relevance",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": false,
+      "expected_answer_contains": "Working from another country requires written review",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 200,
+        "completion_tokens": 198,
+        "total_tokens": 398
+      },
+      "generation_ms": 981.7
+    },
+    {
+      "id": "h13",
+      "question": "VPN?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6346672177314758,
+      "route": "conversation",
+      "refused": true,
+      "refusal_reason": "low_relevance",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_reply": "I could not find the answer in the provided policy documents.",
+      "cited": [],
+      "cites_expected_section": false,
+      "expected_answer_contains": "Use the company VPN",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 191,
+        "completion_tokens": 177,
+        "total_tokens": 368
+      },
+      "generation_ms": 3616.1
+    }
+  ],
+  "prices_usd_per_token": {
+    "prompt": 1.8e-08,
+    "completion": 9e-08
+  },
+  "budget_usd": 0.004,
+  "worst_case_reserved_usd": 0.002869,
+  "token_priced_cost_usd": 0.0003755,
+  "elapsed_seconds": 73.052
+}

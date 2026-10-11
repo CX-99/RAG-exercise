@@ -1,0 +1,406 @@
+{
+  "llm_model": "openai/gpt-oss-20b",
+  "embedding_model": "openai/text-embedding-3-small",
+  "top_k": 5,
+  "answerable_count": 7,
+  "unanswerable_count": 6,
+  "skipped_count": 0,
+  "errors": {},
+  "hit@1": 1.0,
+  "hit@k": 1.0,
+  "mrr": 1.0,
+  "answer_contains_rate": 0.8571428571428571,
+  "citation_hit_rate": 1.0,
+  "unanswerable_refusal_rate": 1.0,
+  "answerable_false_refusal_rate": 0.0,
+  "refusal_reasons": {
+    "model_not_found": 6
+  },
+  "routes": {
+    "conversation": 6,
+    "grounded": 7
+  },
+  "prompt_tokens": 14531,
+  "completion_tokens": 2451,
+  "questions": [
+    {
+      "id": "h01",
+      "question": "How many sick leave days do employees get each year?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.5455343723297119,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1252,
+        "completion_tokens": 183,
+        "total_tokens": 1435
+      },
+      "generation_ms": 2260.1
+    },
+    {
+      "id": "h02",
+      "question": "How many unused sick days can I carry over into next year?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.5615596175193787,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1259,
+        "completion_tokens": 209,
+        "total_tokens": 1468
+      },
+      "generation_ms": 4174.5
+    },
+    {
+      "id": "h03",
+      "question": "How many days of paid bereavement leave do employees get?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.5336525440216064,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1249,
+        "completion_tokens": 147,
+        "total_tokens": 1396
+      },
+      "generation_ms": 2688.9
+    },
+    {
+      "id": "h04",
+      "question": "What is the meal allowance for a day trip without an overnight stay?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.5991181135177612,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1277,
+        "completion_tokens": 330,
+        "total_tokens": 1607
+      },
+      "generation_ms": 4110.5
+    },
+    {
+      "id": "h05",
+      "question": "What is the daily cap for taxis on business trips?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.5252050161361694,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1297,
+        "completion_tokens": 151,
+        "total_tokens": 1448
+      },
+      "generation_ms": 1423.3
+    },
+    {
+      "id": "h06",
+      "question": "Is there a public transport allowance for commuting to the office?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.5065416693687439,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1249,
+        "completion_tokens": 302,
+        "total_tokens": 1551
+      },
+      "generation_ms": 3760.7
+    },
+    {
+      "id": "h07",
+      "question": "How much paid vacation do I get each year?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.5127971172332764,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Full\u2011time employees receive **22 working days of paid annual leave per calendar year**[1].",
+      "raw_replies": [
+        "Full\u2011time employees receive **22 working days of paid annual leave per calendar year**\u30101\u3011."
+      ],
+      "cited": [
+        {
+          "doc_id": "annual-leave",
+          "section": "3. Annual Leave > 3.1 Entitlement"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "22 working days",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1040,
+        "completion_tokens": 90,
+        "total_tokens": 1130
+      },
+      "generation_ms": 2440.2
+    },
+    {
+      "id": "h08",
+      "question": "When do rolled-over holiday days expire?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.4347170889377594,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Rolled\u2011over (carry\u2011over) holiday days must be used by **31\u202fMarch of the following calendar year**; after that date they expire unless the Head of People has approved a written exception. [1]",
+      "raw_replies": [
+        "Rolled\u2011over (carry\u2011over) holiday days must be used by **31\u202fMarch of the following calendar year**; after that date they expire unless the Head of People has approved a written exception. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "annual-leave",
+          "section": "3. Annual Leave > 3.2 Carry-over"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "31 March",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 187,
+        "total_tokens": 1189
+      },
+      "generation_ms": 1856.9
+    },
+    {
+      "id": "h09",
+      "question": "Is two-factor login mandatory?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.484832227230072,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Yes. Multi\u2011factor authentication is required for all company accounts that support it. [1]",
+      "raw_replies": [
+        "Yes. Multi\u2011factor authentication is required for all company accounts that support it. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "information-security",
+          "section": "2. Accounts and access > 2.1 Authentication"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "multi-factor authentication is required",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1013,
+        "completion_tokens": 143,
+        "total_tokens": 1156
+      },
+      "generation_ms": 2109.2
+    },
+    {
+      "id": "h10",
+      "question": "Can I save up unused remote days for a later week?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.5277518630027771,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "No \u2013 unused remote days cannot be carried over to a later week. The Remote Work Policy states that \u201cUnused remote days do not accumulate and cannot be carried into another week\u201d[1].",
+      "raw_replies": [
+        "No \u2013 unused remote days cannot be carried over to a later week. The Remote Work Policy states that \u201cUnused remote days do not accumulate and cannot be carried into another week\u201d\u30101\u3011."
+      ],
+      "cited": [
+        {
+          "doc_id": "remote-work",
+          "section": "2. Schedule and availability > 2.1 Weekly remote allowance"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "do not accumulate",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1045,
+        "completion_tokens": 113,
+        "total_tokens": 1158
+      },
+      "generation_ms": 2208.8
+    },
+    {
+      "id": "h11",
+      "question": "What's the nightly hotel limit?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.45183801651000977,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "The nightly hotel limit is **SGD\u202f220 per room per night before taxes**. [1]",
+      "raw_replies": [
+        "The nightly hotel limit is **SGD\u202f220 per room per night before taxes**. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "travel-expenses",
+          "section": "2. Business travel > 2.2 Meals and accommodation"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "SGD 220",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 990,
+        "completion_tokens": 110,
+        "total_tokens": 1100
+      },
+      "generation_ms": 1652.2
+    },
+    {
+      "id": "h12",
+      "question": "Can I work from another country for a few weeks?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.4517708420753479,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Yes \u2013 you can work from another country for a few weeks, but you must obtain formal approval first.  \n- The Remote Work Policy states that working from a country other than your recorded home address in Singapore requires a written review by People Operations and Information Security before the travel is booked, and the approval must specify the dates and permitted access. [1]  \n- The Information Security Policy adds that before any overseas business travel you should contact Information Security to check device and data\u2011access restrictions, and that approval of a travel expense does not automatically grant unrestricted access from another country. [2]",
+      "raw_replies": [
+        "Yes \u2013 you can work from another country for a few weeks, but you must obtain formal approval first.  \n- The Remote Work Policy states that working from a country other than your recorded home address in Singapore requires a written review by People Operations and Information Security before the travel is booked, and the approval must specify the dates and permitted access. [1]  \n- The Information Security Policy adds that before any overseas business travel you should contact Information Security to check device and data\u2011access restrictions, and that approval of a travel expense does not automatically grant unrestricted access from another country. [3]"
+      ],
+      "cited": [
+        {
+          "doc_id": "remote-work",
+          "section": "4. Connectivity and location"
+        },
+        {
+          "doc_id": "information-security",
+          "section": "3. Devices and remote work > 3.2 Remote access"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "Working from another country requires written review",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 1016,
+        "completion_tokens": 326,
+        "total_tokens": 1342
+      },
+      "generation_ms": 2450.1
+    },
+    {
+      "id": "h13",
+      "question": "VPN?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.4833441376686096,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Use the company VPN whenever you need to access internal systems from outside the office. Do not bypass access controls or disable security software to make a connection work; instead contact IT for help. This is the only approved remote\u2011access method for company data. [1]",
+      "raw_replies": [
+        "Use the company VPN whenever you need to access internal systems from outside the office. Do not bypass access controls or disable security software to make a connection work; instead contact IT for help. This is the only approved remote\u2011access method for company data. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "information-security",
+          "section": "3. Devices and remote work > 3.2 Remote access"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "Use the company VPN",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 842,
+        "completion_tokens": 160,
+        "total_tokens": 1002
+      },
+      "generation_ms": 1945.9
+    }
+  ],
+  "prices_usd_per_token": {
+    "prompt": 1.8e-08,
+    "completion": 9e-08,
+    "embedding": 2e-08
+  },
+  "budget_usd": 0.008,
+  "worst_case_reserved_usd": 0.005411,
+  "token_priced_generation_cost_usd": 0.0004821,
+  "elapsed_seconds": 99.368
+}

@@ -1,0 +1,13 @@
+{"id":"h01","question":"How many sick leave days do employees get each year?","answerable":false,"expected_doc_id":null,"expected_section":null,"expected_answer_contains":null}
+{"id":"h02","question":"How many unused sick days can I carry over into next year?","answerable":false,"expected_doc_id":null,"expected_section":null,"expected_answer_contains":null}
+{"id":"h03","question":"How many days of paid bereavement leave do employees get?","answerable":false,"expected_doc_id":null,"expected_section":null,"expected_answer_contains":null}
+{"id":"h04","question":"What is the meal allowance for a day trip without an overnight stay?","answerable":false,"expected_doc_id":null,"expected_section":null,"expected_answer_contains":null}
+{"id":"h05","question":"What is the daily cap for taxis on business trips?","answerable":false,"expected_doc_id":null,"expected_section":null,"expected_answer_contains":null}
+{"id":"h06","question":"Is there a public transport allowance for commuting to the office?","answerable":false,"expected_doc_id":null,"expected_section":null,"expected_answer_contains":null}
+{"id":"h07","question":"How much paid vacation do I get each year?","answerable":true,"expected_doc_id":"annual-leave","expected_section":"3. Annual Leave > 3.1 Entitlement","expected_answer_contains":"22 working days"}
+{"id":"h08","question":"When do rolled-over holiday days expire?","answerable":true,"expected_doc_id":"annual-leave","expected_section":"3. Annual Leave > 3.2 Carry-over","expected_answer_contains":"31 March"}
+{"id":"h09","question":"Is two-factor login mandatory?","answerable":true,"expected_doc_id":"information-security","expected_section":"2. Accounts and access > 2.1 Authentication","expected_answer_contains":"multi-factor authentication is required"}
+{"id":"h10","question":"Can I save up unused remote days for a later week?","answerable":true,"expected_doc_id":"remote-work","expected_section":"2. Schedule and availability > 2.1 Weekly remote allowance","expected_answer_contains":"do not accumulate"}
+{"id":"h11","question":"What's the nightly hotel limit?","answerable":true,"expected_doc_id":"travel-expenses","expected_section":"2. Business travel > 2.2 Meals and accommodation","expected_answer_contains":"SGD 220"}
+{"id":"h12","question":"Can I work from another country for a few weeks?","answerable":true,"expected_doc_id":"remote-work","expected_section":"4. Connectivity and location","expected_answer_contains":"Working from another country requires written review"}
+{"id":"h13","question":"VPN?","answerable":true,"expected_doc_id":"information-security","expected_section":"3. Devices and remote work > 3.2 Remote access","expected_answer_contains":"Use the company VPN"}

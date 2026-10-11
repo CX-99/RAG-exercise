@@ -1,0 +1,58 @@
+{
+  "provider": "extractive",
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "min_relevance": 0.735,
+  "endpoint": "http://127.0.0.1:8765/api/ask",
+  "hugging_face_offline": true,
+  "dotenv_disabled": true,
+  "status_codes": {
+    "carry_over": 200,
+    "hotel": 200,
+    "dental": 200
+  },
+  "questions": {
+    "carry_over": "How many unused annual leave days can I carry over, and when do they expire?",
+    "hotel": "What's the nightly hotel limit?",
+    "dental": "What is the annual dental insurance coverage limit?"
+  },
+  "responses": {
+    "carry_over": {
+      "answer": "Most relevant passage: Employees may carry over up to 5 unused annual leave days into the next calendar year. Carried-over days must be used by 31 March, after which they expire unless the Head of People has approved an exception in writing. [1]\n\nLLM generation is disabled; this text is quoted, not generated.",
+      "citations": [
+        {
+          "doc_id": "annual-leave",
+          "title": "Annual Leave Policy",
+          "section": "3. Annual Leave > 3.2 Carry-over",
+          "snippet": "Employees may carry over up to 5 unused annual leave days into the next calendar year. Carried-over days must be used by 31 March, after which they expire unless the Head of People has approved an exception in writing.\n\nThe leave system uses carried-over days before the current year's allocation. Employees submit exception requests by 15 March, describing the operational reason leave could not be taken. A manager's verbal assurance does not extend the expiry date. Approved exceptions state a replacement deadline and are retained with the leave record. Ordinary workload alone does not automatically qualify for an extension.",
+          "score": 0.9025325179100037
+        }
+      ],
+      "request_id": "debe7c15d06c4b118496feeef40310d6"
+    },
+    "hotel": {
+      "answer": "Most relevant passage: Alcohol and meals already included in a hotel or event booking are not reimbursable. A higher hotel rate requires the Finance Director's written approval before booking, supported by evidence that suitable rooms are unavailable within the cap. [1]\n\nLLM generation is disabled; this text is quoted, not generated.",
+      "citations": [
+        {
+          "doc_id": "travel-expenses",
+          "title": "Travel and Expenses Policy",
+          "section": "2. Business travel > 2.2 Meals and accommodation",
+          "snippet": "Meals during approved overnight business travel are reimbursable up to SGD 65 per person per day, including taxes and service charges. Alcohol and meals already included in a hotel or event booking are not reimbursable.\n\nThe daily meal allowance is a cap on actual spending, not an automatic cash payment. Hotel accommodation is capped at SGD 220 per room per night before taxes. A higher hotel rate requires the Finance Director's written approval before booking, supported by evidence that suitable rooms are unavailable within the cap. Employees record each meal separately and attach receipts. Team meals must identify the attendees and the business purpose so Finance can avoid duplicate claims.",
+          "score": 0.7559270858764648
+        }
+      ],
+      "request_id": "64e848e9ee6b47efa4d59035a23c743f"
+    },
+    "dental": {
+      "answer": "I could not find the answer in the provided policy documents.",
+      "citations": [],
+      "request_id": "541995e15b8f43ccbfddee1521f805d6"
+    }
+  },
+  "content_checks": {
+    "carry_over": true,
+    "hotel": false,
+    "dental": true
+  },
+  "all_content_checks_passed": false,
+  "known_limitation": "The hotel quotation omits SGD 220; selection was kept frozen."
+}

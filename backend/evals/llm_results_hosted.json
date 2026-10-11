@@ -1,0 +1,616 @@
+{
+  "llm_model": "openai/gpt-oss-20b",
+  "embedding_model": "openai/text-embedding-3-small",
+  "top_k": 5,
+  "answerable_count": 15,
+  "unanswerable_count": 5,
+  "skipped_count": 0,
+  "errors": {},
+  "hit@1": 1.0,
+  "hit@k": 1.0,
+  "mrr": 1.0,
+  "answer_contains_rate": 0.8666666666666667,
+  "citation_hit_rate": 1.0,
+  "unanswerable_refusal_rate": 1.0,
+  "answerable_false_refusal_rate": 0.0,
+  "refusal_reasons": {
+    "model_not_found": 5
+  },
+  "routes": {
+    "grounded": 15,
+    "conversation": 5
+  },
+  "prompt_tokens": 21821,
+  "completion_tokens": 3286,
+  "questions": [
+    {
+      "id": "q01",
+      "question": "How many days of annual leave does a full-time employee receive per year?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6854723691940308,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Full\u2011time employees receive **22 working days** of paid annual leave per calendar year. [1]",
+      "raw_replies": [
+        "Full\u2011time employees receive **22 working days** of paid annual leave per calendar year. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "annual-leave",
+          "section": "3. Annual Leave > 3.1 Entitlement"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "22 working days",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 93,
+        "total_tokens": 1095
+      },
+      "generation_ms": 1898.3
+    },
+    {
+      "id": "q02",
+      "question": "How many unused annual leave days can I carry over, and when do they expire?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7369667887687683,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "You can carry over **up to 5 unused annual\u2011leave days** into the next calendar year. Those carried\u2011over days must be taken by **31\u202fMarch** of the following year; if they are not used by then they expire unless the Head of People has approved a written exception. [1]",
+      "raw_replies": [
+        "You can carry over **up to 5 unused annual\u2011leave days** into the next calendar year. Those carried\u2011over days must be taken by **31\u202fMarch** of the following year; if they are not used by then they expire unless the Head of People has approved a written exception. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "annual-leave",
+          "section": "3. Annual Leave > 3.2 Carry-over"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "31 March",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 208,
+        "total_tokens": 1206
+      },
+      "generation_ms": 2027.7
+    },
+    {
+      "id": "q03",
+      "question": "How far in advance must I request annual leave and who approves it?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7664490938186646,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "You must submit an annual leave request at least **10 calendar days before the first day you want off**. The request is then **approved or declined by your line manager** within three working days, taking staffing and other absences into account. [1]",
+      "raw_replies": [
+        "You must submit an annual leave request at least **10 calendar days before the first day you want off**. The request is then **approved or declined by your line manager** within three working days, taking staffing and other absences into account. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "annual-leave",
+          "section": "3. Annual Leave > 3.3 Request and approval"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "at least 10 calendar days",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1024,
+        "completion_tokens": 259,
+        "total_tokens": 1283
+      },
+      "generation_ms": 2091.2
+    },
+    {
+      "id": "q04",
+      "question": "What is the daily meal reimbursement limit on overnight business trips?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6747078895568848,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "The daily meal reimbursement limit on overnight business trips is **SGD\u202f65 per person per day** (including taxes and service charges)[1].",
+      "raw_replies": [
+        "The daily meal reimbursement limit on overnight business trips is **SGD\u202f65 per person per day** (including taxes and service charges)\u30101\u3011."
+      ],
+      "cited": [
+        {
+          "doc_id": "travel-expenses",
+          "section": "2. Business travel > 2.2 Meals and accommodation"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "SGD 65 per person per day",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1053,
+        "completion_tokens": 110,
+        "total_tokens": 1163
+      },
+      "generation_ms": 1656.2
+    },
+    {
+      "id": "q05",
+      "question": "What is the deadline for submitting a business travel expense claim?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6948449611663818,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "The deadline for submitting a business travel expense claim is within **30 calendar days after returning** from the trip. [1]",
+      "raw_replies": [
+        "The deadline for submitting a business travel expense claim is within **30 calendar days after returning** from the trip. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "travel-expenses",
+          "section": "3. Expense claims > 3.1 Submission deadline"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "within 30 calendar days after returning",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1070,
+        "completion_tokens": 133,
+        "total_tokens": 1203
+      },
+      "generation_ms": 3983.8
+    },
+    {
+      "id": "q06",
+      "question": "How much can I claim for a home-office chair and monitor, and how often?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6149573922157288,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "You can claim **up to\u202fSGD\u202f400** for eligible home\u2011office equipment\u2014including an ergonomic chair and a monitor\u2014within a **rolling 24\u2011month period**. The cap covers the combined cost of those items (plus any other eligible items such as a desk, keyboard, or mouse) and must be approved in advance by your line manager with itemised receipts attached. [1]",
+      "raw_replies": [
+        "You can claim **up to\u202fSGD\u202f400** for eligible home\u2011office equipment\u2014including an ergonomic chair and a monitor\u2014within a **rolling 24\u2011month period**. The cap covers the combined cost of those items (plus any other eligible items such as a desk, keyboard, or mouse) and must be approved in advance by your line manager with itemised receipts attached. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "travel-expenses",
+          "section": "3. Expense claims > 3.2 Home-office reimbursement"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "SGD 400 for eligible home-office equipment in a rolling 24-month period",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 1032,
+        "completion_tokens": 404,
+        "total_tokens": 1436
+      },
+      "generation_ms": 4189.0
+    },
+    {
+      "id": "q07",
+      "question": "How many days a week may eligible employees work remotely?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7266266345977783,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Eligible employees may work remotely for up to **3 days per week**[1].",
+      "raw_replies": [
+        "Eligible employees may work remotely for up to **3 days per week**\u30101\u3011."
+      ],
+      "cited": [
+        {
+          "doc_id": "remote-work",
+          "section": "2. Schedule and availability > 2.1 Weekly remote allowance"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "up to 3 days per week",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1014,
+        "completion_tokens": 91,
+        "total_tokens": 1105
+      },
+      "generation_ms": 1279.3
+    },
+    {
+      "id": "q08",
+      "question": "What hours must remote employees be reachable in Singapore time?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7530500292778015,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Remote employees must be reachable between **10:00\u202fand\u202f16:00 Singapore time** on their scheduled working days, excluding their normal meal break and any approved appointments. [1]",
+      "raw_replies": [
+        "Remote employees must be reachable between **10:00\u202fand\u202f16:00 Singapore time** on their scheduled working days, excluding their normal meal break and any approved appointments. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "remote-work",
+          "section": "2. Schedule and availability > 2.2 Core availability"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "between 10:00 and 16:00 Singapore time",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1086,
+        "completion_tokens": 105,
+        "total_tokens": 1191
+      },
+      "generation_ms": 3115.8
+    },
+    {
+      "id": "q09",
+      "question": "Who supplies and owns the laptop used for remote work?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.7189795970916748,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "The laptop used for remote work is supplied by the company, and IT retains ownership of that managed device. [1]",
+      "raw_replies": [
+        "The laptop used for remote work is supplied by the company, and IT retains ownership of that managed device. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "remote-work",
+          "section": "3. Workspace and equipment > 3.2 Equipment responsibilities"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "IT retains ownership",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1002,
+        "completion_tokens": 122,
+        "total_tokens": 1124
+      },
+      "generation_ms": 3050.0
+    },
+    {
+      "id": "q10",
+      "question": "What is the minimum password length and is multi-factor authentication required?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6379737854003906,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "The policy states that company passwords must be at least 14 characters long, and multi\u2011factor authentication is required for all company accounts that support it. [1]",
+      "raw_replies": [
+        "The policy states that company passwords must be at least 14 characters long, and multi\u2011factor authentication is required for all company accounts that support it. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "information-security",
+          "section": "2. Accounts and access > 2.1 Authentication"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "at least 14 characters",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1061,
+        "completion_tokens": 114,
+        "total_tokens": 1175
+      },
+      "generation_ms": 2592.6
+    },
+    {
+      "id": "q11",
+      "question": "How quickly must I report a lost laptop or suspected phishing incident?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6741558313369751,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "You must report a lost laptop or suspected phishing incident within **1 hour of discovery**[1].",
+      "raw_replies": [
+        "You must report a lost laptop or suspected phishing incident within **1 hour of discovery**\u30101\u3011."
+      ],
+      "cited": [
+        {
+          "doc_id": "information-security",
+          "section": "4. Incidents and retention > 4.1 Incident reporting"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "within 1 hour of discovery",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 954,
+        "completion_tokens": 94,
+        "total_tokens": 1048
+      },
+      "generation_ms": 2340.9
+    },
+    {
+      "id": "q12",
+      "question": "Do I need to use the company VPN to access internal systems from home?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.650026261806488,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Yes. The Information Security Policy requires that you use the company VPN whenever you access internal systems outside the office, including from home. Bypassing the VPN or disabling security controls is not permitted; you should contact IT for assistance instead. [1]",
+      "raw_replies": [
+        "Yes. The Information Security Policy requires that you use the company VPN whenever you access internal systems outside the office, including from home. Bypassing the VPN or disabling security controls is not permitted; you should contact IT for assistance instead. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "information-security",
+          "section": "3. Devices and remote work > 3.2 Remote access"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "Use the company VPN",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1057,
+        "completion_tokens": 148,
+        "total_tokens": 1205
+      },
+      "generation_ms": 1825.2
+    },
+    {
+      "id": "q13",
+      "question": "What gift value requires a declaration and how long do I have to declare it?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.454642117023468,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "A gift (or hospitality) that is worth **more than SGD\u202f50** must be declared, and the declaration must be made **within 5 working days** of receiving the offer. [1]",
+      "raw_replies": [
+        "A gift (or hospitality) that is worth **more than SGD\u202f50** must be declared, and the declaration must be made **within 5 working days** of receiving the offer. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "code-of-conduct",
+          "section": "2. Integrity and external relationships > 2.1 Gifts and hospitality"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "more than SGD 50",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1012,
+        "completion_tokens": 133,
+        "total_tokens": 1145
+      },
+      "generation_ms": 5401.0
+    },
+    {
+      "id": "q14",
+      "question": "Who should I tell about a conflict of interest before choosing a supplier?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6934078335762024,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "You should disclose the conflict of interest to the **Compliance Lead** before you participate in the supplier selection decision. [1]",
+      "raw_replies": [
+        "You should disclose the conflict of interest to the **Compliance Lead** before you participate in the supplier selection decision. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "code-of-conduct",
+          "section": "2. Integrity and external relationships > 2.2 Conflicts of interest"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "to the Compliance Lead before taking part in the affected decision",
+      "answer_contains": false,
+      "usage": {
+        "prompt_tokens": 1050,
+        "completion_tokens": 96,
+        "total_tokens": 1146
+      },
+      "generation_ms": 935.0
+    },
+    {
+      "id": "q15",
+      "question": "Who can receive a misconduct report and how quickly is it acknowledged?",
+      "answerable": true,
+      "rank": 1,
+      "best_dense": 0.6014012098312378,
+      "route": "grounded",
+      "kind": "answer",
+      "refused": false,
+      "refusal_reason": null,
+      "answer": "Employees may file a misconduct report with their line manager, People Operations, or the Compliance Lead.  People Operations acknowledges the report within **2 working days** and assigns an independent case owner where practical. [1]",
+      "raw_replies": [
+        "Employees may file a misconduct report with their line manager, People Operations, or the Compliance Lead.  People Operations acknowledges the report within **2 working days** and assigns an independent case owner where practical. [1]"
+      ],
+      "cited": [
+        {
+          "doc_id": "code-of-conduct",
+          "section": "3. Speaking up > 3.1 Reporting concerns"
+        }
+      ],
+      "cites_expected_section": true,
+      "expected_answer_contains": "within 2 working days",
+      "answer_contains": true,
+      "usage": {
+        "prompt_tokens": 1010,
+        "completion_tokens": 202,
+        "total_tokens": 1212
+      },
+      "generation_ms": 3084.2
+    },
+    {
+      "id": "q16",
+      "question": "What is the annual dental insurance coverage limit?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.2725394070148468,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 212,
+        "total_tokens": 1475
+      },
+      "generation_ms": 4189.6
+    },
+    {
+      "id": "q17",
+      "question": "What percentage of salary does the company contribute to a pension?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.2945881485939026,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1342,
+        "completion_tokens": 150,
+        "total_tokens": 1492
+      },
+      "generation_ms": 2739.6
+    },
+    {
+      "id": "q18",
+      "question": "How many weeks of paid parental leave are available after adoption?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.40927866101264954,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1245,
+        "completion_tokens": 247,
+        "total_tokens": 1492
+      },
+      "generation_ms": 4108.4
+    },
+    {
+      "id": "q19",
+      "question": "How long is the employee share-option vesting period?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.42852503061294556,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1239,
+        "completion_tokens": 162,
+        "total_tokens": 1401
+      },
+      "generation_ms": 13097.7
+    },
+    {
+      "id": "q20",
+      "question": "What subsidy is available for a gym membership?",
+      "answerable": false,
+      "rank": null,
+      "best_dense": 0.32851362228393555,
+      "route": "conversation",
+      "kind": "not_found",
+      "refused": true,
+      "refusal_reason": "model_not_found",
+      "answer": "I could not find the answer in the provided policy documents.",
+      "raw_replies": [
+        "I could not find the answer in the provided policy documents.",
+        "I could not find the answer in the provided policy documents."
+      ],
+      "cited": [],
+      "cites_expected_section": null,
+      "expected_answer_contains": null,
+      "answer_contains": null,
+      "usage": {
+        "prompt_tokens": 1307,
+        "completion_tokens": 203,
+        "total_tokens": 1510
+      },
+      "generation_ms": 9728.6
+    }
+  ],
+  "prices_usd_per_token": {
+    "prompt": 1.8e-08,
+    "completion": 9e-08,
+    "embedding": 2e-08
+  },
+  "budget_usd": 0.012,
+  "worst_case_reserved_usd": 0.008142,
+  "token_priced_generation_cost_usd": 0.0006885,
+  "elapsed_seconds": 121.863
+}
